@@ -10,7 +10,6 @@
     "code:check": "prettier --check \"src/**/*.{ts,css,vue,js,html}\""
   },
   "dependencies": {
-    "@fortawesome/fontawesome-free": "^5.15.3",
     "@popperjs/core": "^2.9.2",
     "@types/lodash.debounce": "^4.0.6",
     "axios": "^0.24.0",

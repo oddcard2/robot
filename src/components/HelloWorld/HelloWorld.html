@@ -30,40 +30,60 @@
     <div class="d-flex flex-column justify-content-end flex-grow-1">
         <div class="d-flex flex-row justify-content-between">
             <div class="d-flex flex-row justify-content-between">
-                <button v-on:click="rotateToLeft" type="button" class="btn btn-secondary me-2 me-sm-4">
+                <button v-on:click="rotateToLeft" type="button" class="btn btn-secondary me-2 me-sm-4 tall-button">
                     <div class="d-flex flex-column justify-content-between align-items-center">
-                        <span>Left</span>
-                        <!-- <i class="align-middle far fa-arrow-circle-left"></i> -->
+                        <span>&nbsp;Left&nbsp;</span>
+                        <svg width="16" height="16" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
+                            <g>
+                                <path fill="white" d="M1408 960v-128q0-26-19-45t-45-19h-502l189-189q19-19 19-45t-19-45l-91-91q-18-18-45-18t-45 18l-362 362-91 91q-18 18-18 45t18 45l91 91 362 362q18 18 45 18t45-18l91-91q18-18 18-45t-18-45l-189-189h502q26 0 45-19t19-45zm256-64q0 209-103 385.5t-279.5 279.5-385.5 103-385.5-103-279.5-279.5-103-385.5 103-385.5 279.5-279.5 385.5-103 385.5 103 279.5 279.5 103 385.5z"/>
+                            </g>
+                        </svg>
                     </div>
                 </button>
-                <button v-on:click="rotateToRight" type="button" class="btn btn-secondary">
+                <button v-on:click="rotateToRight" type="button" class="btn btn-secondary tall-button">
                     <div class="d-flex flex-column justify-content-between align-items-center">
                         <span>Right</span>
-                        <!-- <i class="align-middle far fa-arrow-circle-right"></i> -->
+                        <svg width="16" height="16" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
+                            <g>
+                                <path fill="white" d="M1413 896q0-27-18-45l-91-91-362-362q-18-18-45-18t-45 18l-91 91q-18 18-18 45t18 45l189 189h-502q-26 0-45 19t-19 45v128q0 26 19 45t45 19h502l-189 189q-19 19-19 45t19 45l91 91q18 18 45 18t45-18l362-362 91-91q18-18 18-45zm251 0q0 209-103 385.5t-279.5 279.5-385.5 103-385.5-103-279.5-279.5-103-385.5 103-385.5 279.5-279.5 385.5-103 385.5 103 279.5 279.5 103 385.5z"/>
+                            </g>
+                        </svg>
                     </div>
                 </button>
             </div>
 
             <div class="d-flex flex-row justify-content-between">
                 <div class="d-flex flex-row justify-content-between">
-                    <button v-on:click="stop" type="button" class="btn  btn-danger me-2 ms-2 me-sm-4 ms-sm-4">
+                    <button v-on:click="stop" type="button" class="btn  btn-danger me-2 ms-2 me-sm-4 ms-sm-4 tall-button">
                         <div class="d-flex flex-column justify-content-between align-items-center">
                             <span>Stop</span>
-                            <!-- <i class="align-middle far fa-stop-circle"></i> -->
+                            <svg width="16" height="16" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
+                                <g>
+                                    <path fill="white" d="M1216 1184v-576q0-14-9-23t-23-9h-576q-14 0-23 9t-9 23v576q0 14 9 23t23 9h576q14 0 23-9t9-23zm448-288q0 209-103 385.5t-279.5 279.5-385.5 103-385.5-103-279.5-279.5-103-385.5 103-385.5 279.5-279.5 385.5-103 385.5 103 279.5 279.5 103 385.5z"/>
+                                </g>
+                            </svg>
                         </div>
                     </button>
                 </div>
                 <div class="d-flex flex-column justify-content-between">
                     <button v-on:click="goForward" type="button" class="btn btn-secondary mb-5">
                         <div class="d-flex flex-column justify-content-between align-items-center">
-                            <!-- <i class="align-middle far fa-arrow-circle-up"></i> -->
+                            <svg width="16" height="16" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
+                                <g>
+                                    <path fill="white" d="M1412 895q0-27-18-45l-362-362-91-91q-18-18-45-18t-45 18l-91 91-362 362q-18 18-18 45t18 45l91 91q18 18 45 18t45-18l189-189v502q0 26 19 45t45 19h128q26 0 45-19t19-45v-502l189 189q19 19 45 19t45-19l91-91q18-18 18-45zm252 1q0 209-103 385.5t-279.5 279.5-385.5 103-385.5-103-279.5-279.5-103-385.5 103-385.5 279.5-279.5 385.5-103 385.5 103 279.5 279.5 103 385.5z"/>
+                                </g>
+                            </svg>
                             <span>Forward</span>
                         </div>
                     </button>
                     <button v-on:click="goBackward" type="button" class="btn btn-secondary">
                         <div class="d-flex flex-column justify-content-between align-items-center">
                             <span>&nbsp;Backward</span>
-                            <!-- <i class="align-middle far fa-arrow-circle-down"></i> -->
+                            <svg width="16" height="16" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
+                                <g>
+                                    <path fill="white" d="M1412 897q0-27-18-45l-91-91q-18-18-45-18t-45 18l-189 189v-502q0-26-19-45t-45-19h-128q-26 0-45 19t-19 45v502l-189-189q-19-19-45-19t-45 19l-91 91q-18 18-18 45t18 45l362 362 91 91q18 18 45 18t45-18l91-91 362-362q18-18 18-45zm252-1q0 209-103 385.5t-279.5 279.5-385.5 103-385.5-103-279.5-279.5-103-385.5 103-385.5 279.5-279.5 385.5-103 385.5 103 279.5 279.5 103 385.5z"/>
+                                </g>
+                            </svg>
                         </div>
                     </button>
                 </div>
