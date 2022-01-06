@@ -1,6 +1,6 @@
 import Vuex from 'vuex';
-// import axios from 'axios'
-import axios from '../mock/MockData'
+import axios from 'axios'
+// import axios from '../mock/MockData'
 
 const state = {
   isloadingComplete: false,
