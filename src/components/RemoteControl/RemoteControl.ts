@@ -3,7 +3,7 @@ import { mapGetters } from 'vuex';
 import debounce from "lodash.debounce";
 
 @Options({
-    name: 'HelloWroldComponent',
+    name: 'RemoteControlComponent',
     props: {
         msg: String,
     },
@@ -16,7 +16,7 @@ import debounce from "lodash.debounce";
         'hasSpeedError'
     ]),
 })
-export default class HelloWorld extends Vue {
+export default class RemoteControl extends Vue {
     public msg!: string;
 
     private initialized: Boolean = false;

@@ -1,10 +1,10 @@
 import { shallowMount } from "@vue/test-utils";
-import HelloWorld from "@/components/HelloWorld/index.vue";
+import RemoteControl from "@/components/RemoteControl/index.vue";
 
-describe("HelloWorld", () => {
+describe("RemoteControl", () => {
   it("renders props.msg when passed", () => {
     const msg = "New Message";
-    const wrapper = shallowMount(HelloWorld, {
+    const wrapper = shallowMount(RemoteControl, {
       props: { msg },
     });
 
